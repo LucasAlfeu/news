@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="{% static '/styles/style.css' %}">
+    <title>News | Inicio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"><img src="{% static './assets/images/logo.svg' %}" alt="logo News"></div>
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li><a href="#" class="menu__item">Início</a></li>
+                <li><a href="#" class="menu__item">Novidades</a></li>
+                <li><a href="#" class="menu__item">Populares</a></li>
+                <li><a href="#" class="menu__item">Tendência</a></li>
+                <li><a href="#" class="menu__item">Categorias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+        <section class="principal__container">
+            <section class="noticias">
+                <section class="noticia__principal">
+                    <img class="noticia__principal--banner" src="{% static 'assets\images\image-web-3-desktop.jpg' %}" alt="" aria-disabled="true">
+                    <div class="noticia__principal--texto">
+                        <h1 class="noticia__principal--titulo">O Brilhante Futuro da Web 3.0?</h1>
+                        <div class="noticia__principal--container">
+                            <p class="noticia__principal--conteudo">
+                                Mergulhamos na próxima evolução da web que afirma colocar o poder das plataformas de
+                                volta nas mãos das pessoas.
+                                Mas está realmente cumprindo sua promessa?
+                            </p>
+                            <a class="noticia__principal--link" href="#">Saiba Mais</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="noticia__novidades"></section>
+            </section>
+            <section class="novidades">
+                <h2 class="novidades__titulo">Novidades</h2>
+                <div class="novidades__noticias">
+                    <h3 class="novidades__noticias--titulo">Hidrogênio VS Carros Elétricos</h3>
+                    <p class="novidades__noticias--conteudo">
+                        Os carros movidos a hidrogênio alcançarão os EVs?
+                    </p>
+                </div>
+                <div class="novidades__noticias">
+                    <h3 class="novidades__noticias--titulo">As desvantagens da arte da IA</h3>
+                    <p class="novidades__noticias--conteudo">
+                        Quais são os possíveis efeitos adversos da geração de imagem de IA sob demanda?
+                    </p>
+                </div>
+                <div class="novidades__noticias">
+                    <h3 class="novidades__noticias--titulo">O financiamento de VC está secando?</h3>
+                    <p class="novidades__noticias--conteudo">
+                        O financiamento privado por empresas de capital de risco caiu 50% no ano. Nós damos uma olhada
+                        no que isso significa.
+                    </p>
+                </div>
+            </section>
+        </section>
+        <section class="populares">
+            <div class="populares__noticia">
+                <img class="populares__noticia--banner" src="{% static './assets/images/image-retro-pcs.jpg' %}"
+                    alt="Computadores antigos" aria-disabled="true">
+                <div class="populares__noticia--container">
+                    <h2 class="populares__noticia--numeracao">01</h2>
+                    <h3 class="pupolares__noticia--titulo">Revivendo PCs Retrô</h3>
+                    <p class="populares__noticia--conteudo">
+                        O que acontece quando PCs antigos recebem atualizações modernas?
+                    </p>
+                </div>
+            </div>
+            <div class="populares__noticia">
+                <img class="populares__noticia--banner" src="{% static './assets/images/image-top-laptops.jpg' %}"
+                    alt="Teclado de um notebook" aria-disabled="true">
+                <div class="populares__noticia--container">
+                    <h2 class="populares__noticia--numeracao">02</h2>
+                    <h3 class="pupolares__noticia--titulo">Os 10 melhores notebooks de 2022</h3>
+                    <p class="populares__noticia--conteudo">
+                        Nossas melhores escolhas para várias necessidades e orçamentos.
+                    </p>
+                </div>
+            </div>
+            <div class="populares__noticia">
+                <img class="populares__noticia--banner" src="{% static './assets/images/image-gaming-growth.jpg' %}"
+                    alt="Homem jogando um controle de Playstation 4 no ar" aria-disabled="true">
+                <div class="populares__noticia--container">
+                    <h2 class="populares__noticia--numeracao">03</h2>
+                    <h3 class="pupolares__noticia--titulo">O crescimento dos jogos</h3>
+                    <p class="populares__noticia--conteudo">
+                        Como a pandemia gerou novas oportunidades.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

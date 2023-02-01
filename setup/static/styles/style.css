@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 250px 0;
+}
+.menu__lista{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu__item{
+    color: #9d9b9f;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.principal{
+    margin: 1.5rem 250px;
+}
+.principal__container{
+    display: flex;
+}
+.noticia__principal{
+    height: auto;
+    margin-right: 1.5rem;
+    width: auto;
+}
+.noticia__principal--banner{
+    background: url(./assets/images/image-web-3-desktop.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin: 0;
+    padding-bottom: 1.5rem;
+    width: 100%;
+}
+.noticia__principal--texto{
+    display: flex;
+}
+.noticia__principal--titulo{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-right: 4.5rem;
+    width: 70%;
+}
+.noticia__principal--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.noticia__principal--conteudo{
+    font-size: 16px;
+    line-height: 24px;
+}
+.noticia__principal--link{
+    background-color: #f35e51;
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    width: 80px;
+}
+.novidades{
+    background: #00001a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+}
+.novidades__titulo{
+    color: #e2ad61;
+    font-size: 3rem;
+    line-height: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+.novidades__noticias{
+    padding: 1.5rem 0;
+}
+.novidades__noticias:nth-child(3){
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+.novidades__noticias--titulo{
+    font-size: 1.725rem;
+    margin-bottom: 1rem;
+}
+.populares, .populares__noticia{
+    display: flex;
+    margin: 2rem 0;
+}
+.populares__noticia--banner{
+    height: 200px;
+}
+.populares__noticia--container{
+margin-left: 1rem;
+}
+.populares__noticia--numeracao{
+    color: #c8c6ca;
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+}
+.pupolares__noticia--titulo{
+    color: #03010e; 
+}
+.populares__noticia--conteudo{
+    color: #7a7a7b;
+}
